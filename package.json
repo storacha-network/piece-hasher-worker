@@ -6,7 +6,7 @@
   "type": "module",
   "types": "dist/main.d.ts",
   "scripts": {
-    "build": "npm run build:tsc && npm run bundle:main && npm run bundle:worker && npm run bundle:worker:wasm",
+    "build": "npm run build:tsc && npm run bundle:main && npm run bundle:worker",
     "build:tsc": "tsc --build",
     "bundle:main": "esbuild main.js --format=esm --bundle --minify --target=chrome126,firefox126 --outfile=main.min.js",
     "bundle:worker": "esbuild worker.js --format=esm --bundle --minify --target=chrome126,firefox126 --outfile=worker.min.js",
