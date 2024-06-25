@@ -17,7 +17,7 @@ npm install @web3-storage/piece-hasher-worker
     ```js
     import * as PieceHasher from '@web3-storage/piece-hasher-worker'
     ```
-2. Make the worker script available for your application to download. i.e. the file at `./node_modules/@web3-storage/piece-hasher-worker/worker.js`
+2. Make the worker script available for your application to download. i.e. the file at `./node_modules/@web3-storage/piece-hasher-worker/worker.min.js`. It MUST be hosted on the same domain as your application.
 3. Create a hasher passing the worker script URL, and create a multihash from some data:
     ```js
     const pieceHasher = PieceHasher.create('https://example.org/worker.js')
