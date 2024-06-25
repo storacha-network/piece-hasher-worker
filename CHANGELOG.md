@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/storacha-network/piece-hasher-worker/compare/v1.0.1...v1.0.2) (2024-06-25)
+
+
+### Bug Fixes
+
+* build before test ([e2d3191](https://github.com/storacha-network/piece-hasher-worker/commit/e2d3191f550777939eb2bb0910db8450d2ddb2f2))
+
 ## [1.0.1](https://github.com/storacha-network/piece-hasher-worker/compare/v1.0.0...v1.0.1) (2024-06-25)
 
 
