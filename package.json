@@ -1,6 +1,6 @@
 {
   "name": "@web3-storage/piece-hasher-worker",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Web worker for creating piece hashes.",
   "main": "main.js",
   "type": "module",
