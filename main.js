@@ -39,10 +39,7 @@ export const digest = async (input, workerURL) => {
   const bytes = await new Promise((resolve, reject) => {
     const worker = new Worker(workerURL ?? 'worker.min.js')
     worker.onmessage = e => resolve(e.data)
-    worker.onerror = e => {
-      console.error(e)
-      reject(e.error)
-    }
+    worker.onerror = e => reject(e.error)
     worker.postMessage(input)
   })
   return /** @type {import('multiformats').MultihashDigest<typeof code>} */ (
